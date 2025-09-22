@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling>=1.25", "hatch-vcs>=0.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "awesome-math"
+dynamic = ["version"]                 # версия берётся из VCS (git-тегов)
+description = "Tiny math helpers"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+  "mypy>=1.11",
+  "build>=1.2",
+  "twine>=5",                         # оставим для локальной проверки/заливки, но CI не публикует
+]
+
+[project.urls]
+Homepage = "https://example.com"
+
+[project.scripts]
+amath = "awesome_math.core:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/awesome_math"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src/awesome_math",
+  "README.md",
+  "LICENSE",
+  "pyproject.toml",
+  "tests",
+]
+
+# Версия из тегов + генерация файла для runtime (__version__)
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/awesome_math/_version.py"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["missing-module-docstring"]

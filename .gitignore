@@ -1,0 +1,50 @@
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+
+# Артефакты сборки
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Кэши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+.pyre/
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+*.ipynb
+
+# IDE и редакторы
+# .vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+
+# Артефакты CI/CD (если скачиваешь артефакты в рабочую директорию)
+*.whl
+*.tar.gz
+*:Zone.Identifier
+py.typed

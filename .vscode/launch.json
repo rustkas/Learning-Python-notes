@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "pytest: debug ALL tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-q",
+        "${workspaceFolder}/tests"
+      ],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "pytest: debug CURRENT test file",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "args": [
+        "-q",
+        "${file}"
+      ],
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true
+    },
+    {
+      "name": "Run console script (amath)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "awesome_math.core",
+      "args": ["2", "3"],
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Run module awesome_math.core",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "awesome_math.core",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}
