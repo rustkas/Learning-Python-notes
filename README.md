@@ -95,6 +95,7 @@ pytest -q tests/p2_objects/test_booleans_none.py
 pytest -q tests/p2_objects/test_types.py
 pytest -q tests/p2_objects/test_type_hinting.py
 pytest -q tests/p2_objects/test_user_objects.py
+python -m pytest -q tests/p2_objects/test_quiz_ch4.py
 # или весь набор
 pytest -q
 ```
