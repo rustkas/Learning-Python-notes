@@ -18,14 +18,15 @@ dev = [
   "ruff>=0.6",
   "mypy>=1.11",
   "build>=1.2",
-  "twine>=5",                         # оставим для локальной проверки/заливки, но CI не публикует
 ]
 
 [project.urls]
 Homepage = "https://example.com"
 
 [project.scripts]
-amath = "awesome_math.core:main"
+amath  = "awesome_math.core:main"
+script1 = "awesome_math.p1_start.script1:main"
+cycles  = "awesome_math.p1_start.cycles:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/awesome_math"]
@@ -52,3 +53,5 @@ target-version = "py310"
 
 [tool.pylint."MESSAGES CONTROL"]
 disable = ["missing-module-docstring"]
+
+

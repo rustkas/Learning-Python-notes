@@ -21,7 +21,7 @@
       "label": "pytest",
       "type": "shell",
       "command": "${config:python.defaultInterpreterPath}",
-      "args": ["-m", "pytest", "-q", "tests"],
+      "args": ["-m", "pytest", "-vv", "tests"],
       "options": { "cwd": "${workspaceFolder}" },
       "problemMatcher": []
     },
