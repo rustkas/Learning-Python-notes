@@ -101,6 +101,12 @@ pytest -q tests/p5_numbers/test_numbers_expressions.py
 pytest -q tests/p5_numbers/test_dynamic_typing.py
 pytest -q tests/p5_numbers/test_lists_dicts.py
 pytest -q tests/p5_numbers/test_tuples_files.py
+pytest -q tests/p13/test_loops_tools.py
+pytest -q tests/p15/test_docs_tools.py
+pytest -q tests/p16/test_function_basics.py
+pytest -q tests/p17/test_scopes_basics.py
+pytest -q tests/p18/test_arguments_basics.py
+
 # или весь набор
 pytest -q
 ```
