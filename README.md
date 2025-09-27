@@ -106,6 +106,13 @@ pytest -q tests/p15/test_docs_tools.py
 pytest -q tests/p16/test_function_basics.py
 pytest -q tests/p17/test_scopes_basics.py
 pytest -q tests/p18/test_arguments_basics.py
+pytest -q tests/p19/test_function_odds_ends.py
+pytest -q tests/p20/test_comprehensions_and_generators.py
+pytest -q tests/p21/test_benchmarking_tools.py
+pytest -q tests/p22/test_modules_big_picture.py
+pytest -q tests/p23/test_module_coding.py
+pytest -q tests/p24/test_module_packages.py
+pytest -q tests/p25/test_module_odds_and_ends.py
 
 # или весь набор
 pytest -q

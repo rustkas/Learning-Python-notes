@@ -1,7 +1,11 @@
+# pylint: disable=missing-function-docstring
+
 from awesome_math import add, mul
+
 
 def test_add():
     assert add(2, 3) == 5
+
 
 def test_mul():
     assert mul(2, 3) == 6
